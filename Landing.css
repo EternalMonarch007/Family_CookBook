@@ -29,3 +29,48 @@
 ul{
     list-style-type: none;
 }
+html{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  margin-top: 100px;
+  background-color: bisque;
+}
+h1{
+  text-align: center;
+  color: black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+tr th{
+  background-color: orange;
+}
+tr td{
+  background-color: hsl(25, 100%, 50%,0.2);
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}
+.button {
+  padding: 8px 12px;
+  border: none;
+  color: white;
+  background-color: #4CAF50;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: #45a049;
+}
