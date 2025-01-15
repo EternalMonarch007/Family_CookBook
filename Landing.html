@@ -3,30 +3,39 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <title>CookBook_Homepage</title>
+        <link rel="stylesheet" href="Landing.css">
+        <title>Editable Recipe Table</title>
     </head>
     <body>
-            <nav id="navbar" class="nav">
-                <ul class="navbar-list">
-                    <li>About Us<li>
-                    <li>Contact<li>
-                    <li>Logout<li>
-                </ul>
+        <nav id="navbar" class="nav">
+            <ul class="navbar-list">
+                <li>About Us<li>
+                <li>Contact<li>
+                <li>Logout<li>
+            </ul>
         </nav>
-        <div class="full-screen-container">
-            <div class="landing-box">
-                <h1 class="landing-title">Welcome to CookBook</h1>
-                <h4 class="info">The best place to store and share your recipes.<h4>
-                <form>
-                    <div class="input-group">
-                        <label>Search</label>
-                        <input type="text" placeholder="">
-                    </div>
-                    <button type="submit" class="search-button">Search</button>
-                </form>
-            </div>
-        </main>
-
+        <h1>Recipe Table</h1>
+    <table id="recipeTable">
+        <thead>
+            <tr class="head-row">
+                <th>Recipe Name</th>
+                <th>Ingredients</th>
+                <th>Instructions</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="rows-below">
+                <td contenteditable="true">Pasta</td>
+                <td contenteditable="true">Pasta, Sauce</td>
+                <td contenteditable="true">Boil pasta, add sauce</td>
+                <td>
+                    <button class="button" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="button" id="addButton">Add Recipe</button>
+    <script src="Landing.js"></script>
     </body>
 </html>
