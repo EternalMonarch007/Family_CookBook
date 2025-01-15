@@ -116,3 +116,18 @@ html,body{
   .redirect a{
     color:red;
   }
+
+  a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+
+.footer{
+  background-color: orange;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+}
