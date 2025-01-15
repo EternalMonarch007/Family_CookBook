@@ -1,14 +1,6 @@
 * {
-    margin: 0;
     box-sizing: border-box;
 }
-
-@media (max-width: 75em) {
-    html {
-        font-size: 100%;
-    }
-}
-
 .navbar-list {
     display: flex;
     justify-content: flex-end;
@@ -32,27 +24,100 @@ ul {
     list-style-type: none;
 }
 
-.BI {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1; /* Push image behind the content */
+html,body{
+    margin: 0;
+    padding: 0;
 }
-
-.flex-container {
+.container{
+    background-image:url("bg-1.jpg");
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    height: 100vh; /* Full viewport height */
-    position: relative; /* Allows image layering */
-    text-align: center; /* Center text */
+    justify-content: center;
+    align-items: center;
+}
+.hero-box{
+    min-width: 400px;
+    width:80%;
+    max-width: 600px;
+    height:300px;
+    margin:auto;    
+    background-color: hsla(36, 49%, 33%, 0.5);
+    border-radius:10px;
+    padding: 10px 30px;
 }
 
-.heading {
-    font-size: 3em;
-    color: white; /* Ensures text stands out */
-    z-index: 1; /* Places the heading on top of the image */
-    margin: 0; /* Remove default margin */
+.hero-title{
+    color: rgb(255, 247, 0);
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.hero-text{
+    color: white;
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.buttons{
+    background-color: hsla(36, 98%, 50%,0.3);
+    border: 1px solid rgb(251, 68, 1);
+    outline:none;
+    cursor:pointer;
+    color:white;
+    padding:15px;
+    width:40%;
+    font-size:1.5rem;
+}
+
+.buttons a{
+    text-decoration: none;
+    color:white;
+}
+
+.buttons:hover{
+    background-color: hsla(36, 98%, 50%,0.5) ;
+}
+
+.buttons:focus{
+    background-color: hsla(36, 98%, 50%,0.8) ;
+}
+
+.container1{
+    background-image:url("bg-2.jpg");
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.hero-box1{
+    min-width: 400px;
+    width:80%;
+    max-width: 600px;
+    height:400px;
+    margin:auto;    
+    background-color: hsla(36, 49%, 33%, 0.5);
+    border-radius:10px;
+    padding: 10px 30px;
 }
