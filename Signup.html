@@ -3,12 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="Signup.css">
         <title>CookBook_Homepage</title>
     </head>
     <body>
-        <main>
-            <nav id="navbar" class="nav">
+        <nav id="navbar" class="nav">
                 <ul class="navbar-list">
                     <li>About<li>
                     <li>Contact<li>
@@ -16,15 +15,32 @@
                     <li>Log In<li>
                 </ul>
         </nav>
-        <div class="BI">
-            <img src="BL.jpg" alt="Background Image">
+    <div class="full-screen-container">
+        <div class="signup-box">
+            <h1 class="Signup-title">Sign Up</h1>
+            <h4 class="info">Please fill out the required information.<h4>
+            <form>
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="">
+                </div>
+                <button type="submit" class="Signup-button">Sign Up</button>
+                <p class="redirect">Already have an account? <a href="Login.html">Log In</a></p>
+            </form>
         </div>
-        <div>
-            <h1>Welcome to CookBook</h1>
-            <p>Here you can find all the recipes you need to make your favorite dishes</p>
-            <button>Get Started</button>
-        </div>
-        </main>
-
+    </div>
+        
     </body>
 </html>

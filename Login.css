@@ -2,11 +2,7 @@
     margin:0;
     box-sizing: border-box;
   }
-@media (max-width: 75em) {
-    html {
-      font-size: 100%;
-    }
-  }
+
   .navbar-list{
     display:flex;
     justify-content: flex-end;
@@ -29,19 +25,94 @@
 ul{
     list-style-type: none;
 }
-.BI {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden; /* Ensures no scrollbars appear */
+
+html,body{
+  margin:0;
+  padding:0;
 }
 
-.BI img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover; /* Ensures the image scales proportionally */
-}
+
+.login-box{
+  min-width: 400px;
+  width:50%;
+  max-width: 600px;
+  height:450px;
+  margin:auto;
+  background-color: hsla(36, 49%, 33%, 0.852);
+  border-radius:10px;
+  padding: 50px 30px;
+  }
+  
+  .full-screen-container{
+    background-image: url("background-image.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-title, .info{
+    color: white;
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+    
+    font-size: 1.5rem;
+  }
+  .input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+  }
+  .input-group label{
+    color:white;
+    font-weight: lighter;
+    font-size:1rem;
+    margin-bottom:7px;
+  }
+  .input-group input{
+    font-size:1.5rem;
+    padding: .1rem .25rem;
+    background-color:hsla(0, 100%, 6%, 0.3);
+    border: 1px solid black;
+    outline:none;
+    border-radius:5px;
+    color:white;
+    font-weight:lighter;
+  }
+  .input-group input:focus{
+    border :1px solid hsla(36, 97%, 49%, 0.805);
+  }
+  .login-button{
+    background-color: hsla(25, 92%, 9%, 0.788);
+    color:white;
+    font-size:1.5rem;
+    padding: 10px 30px;
+    border: 1px solid hsla(36, 97%, 49%, 0.805);
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+    font-weight: lighter;
+    margin-top:10px;
+    width:100%;
+  }
+  .login-button:hover{
+    background-color: hsla(36, 97%, 49%, 0.5);
+  }
+  .login-button:focus{
+    background-color: hsla(36, 97%, 49%, 0.7);
+  }
+
+  .redirect{
+    color:white;
+    text-align:center;
+    margin-top:10px;
+    padding:10px;
+  }
+
+  .redirect a{
+    color:red;
+  }
