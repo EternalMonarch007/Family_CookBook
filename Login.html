@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Signup_Login.css">
+        <link rel="stylesheet" href="Login.css">
         <title>CookBook_Homepage</title>
     </head>
     <body>
@@ -15,16 +15,25 @@
                     <li>Log In<li>
                 </ul>
         </nav>
-        <div class="login-box">
-        <h1>Login</h1>
-            <form>
-                <label> UserName</label>
-                <input type="text" placeholder="">
-                <label>Password</label>
-                <input type="password" placeholder="">
-                <input type="button" value="Submit">
-            </form>
-        </div>
-        <p>Do not have an account? Sign Up.</p>
+        <div class="full-screen-container">
+            <div class="login-box">
+                <h1 class="login-title">Log In</h1>
+                <h4 class="info">Please enter your information.<h4>
+                <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="">
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                    <p class="redirect">Don't have an account? <a href="Signup.html">Sign Up</a></p>
+                </form>
+            </div>
+        
+        </main>
+
     </body>
 </html>
